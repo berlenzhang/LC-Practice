@@ -6,4 +6,4 @@ class Solution:
             if not lower < node.val < upper:
                 return False
             return helper(node.left, lower, node.val) and helper(node.right, node.val, upper)
-        return helper(root, float("-inf"), float("inf"))g
+        return helper(root, float("-inf"), float("inf"))
